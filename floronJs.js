@@ -3,354 +3,374 @@
  * @module floronJs
  */
 
-const styles ={
-    "alignContent": "",
-    "alignItems": "",
-    "alignSelf": "",
+const styles = {
+    "align-content": "",
+    "align-items": "",
+    "align-self": "",
+    "all": "",
     "animation": "",
-    "animationDelay": "",
-    "animationDirection": "",
-    "animationDuration": "",
-    "animationFillMode": "",
-    "animationIterationCount": "",
-    "animationName": "",
-    "animationPlayState": "",
-    "animationTimingFunction": "",
-    "backdropFilter": "",
-    "backfaceVisibility": "",
+    "animation-delay": "",
+    "animation-direction": "",
+    "animation-duration": "",
+    "animation-fill-mode": "",
+    "animation-iteration-count": "",
+    "animation-name": "",
+    "animation-play-state": "",
+    "animation-timing-function": "",
+    "backdrop-filter": "",
+    "backface-visibility": "",
     "background": "",
-    "backgroundAttachment": "",
-    "backgroundBlendMode": "",
-    "backgroundClip": "",
-    "backgroundColor": "",
-    "backgroundImage": "",
-    "backgroundOrigin": "",
-    "backgroundPosition": "",
-    "backgroundRepeat": "",
-    "backgroundSize": "",
-    "blockSize": "",
+    "background-attachment": "",
+    "background-blend-mode": "",
+    "background-clip": "",
+    "background-color": "",
+    "background-image": "",
+    "background-origin": "",
+    "background-position": "",
+    "background-repeat": "",
+    "background-size": "",
+    "block-size": "",
     "border": "",
-    "borderBlock": "",
-    "borderBlockColor": "",
-    "borderBlockEnd": "",
-    "borderBlockEndColor": "",
-    "borderBlockEndStyle": "",
-    "borderBlockEndWidth": "",
-    "borderBlockStart": "",
-    "borderBlockStartColor": "",
-    "borderBlockStartStyle": "",
-    "borderBlockStartWidth": "",
-    "borderBlockStyle": "",
-    "borderBlockWidth": "",
-    "borderBottom": "",
-    "borderBottomColor": "",
-    "borderBottomLeftRadius": "",
-    "borderBottomRightRadius": "",
-    "borderBottomStyle": "",
-    "borderBottomWidth": "",
-    "borderCollapse": "",
-    "borderColor": "",
-    "borderImage": "",
-    "borderImageOutset": "",
-    "borderImageRepeat": "",
-    "borderImageSlice": "",
-    "borderImageSource": "",
-    "borderImageWidth": "",
-    "borderInline": "",
-    "borderInlineColor": "",
-    "borderInlineEnd": "",
-    "borderInlineEndColor": "",
-    "borderInlineEndStyle": "",
-    "borderInlineEndWidth": "",
-    "borderInlineStart": "",
-    "borderInlineStartColor": "",
-    "borderInlineStartStyle": "",
-    "borderInlineStartWidth": "",
-    "borderInlineStyle": "",
-    "borderInlineWidth": "",
-    "borderLeft": "",
-    "borderLeftColor": "",
-    "borderLeftStyle": "",
-    "borderLeftWidth": "",
-    "borderRadius": "",
-    "borderRight": "",
-    "borderRightColor": "",
-    "borderRightStyle": "",
-    "borderRightWidth": "",
-    "borderSpacing": "",
-    "borderStyle": "",
-    "borderTop": "",
-    "borderTopColor": "",
-    "borderTopLeftRadius": "",
-    "borderTopRightRadius": "",
-    "borderTopStyle": "",
-    "borderTopWidth": "",
-    "borderWidth": "",
+    "border-block": "",
+    "border-block-color": "",
+    "border-block-end": "",
+    "border-block-end-color": "",
+    "border-block-end-style": "",
+    "border-block-end-width": "",
+    "border-block-start": "",
+    "border-block-start-color": "",
+    "border-block-start-style": "",
+    "border-block-start-width": "",
+    "border-block-style": "",
+    "border-block-width": "",
+    "border-bottom": "",
+    "border-bottom-color": "",
+    "border-bottom-left-radius": "",
+    "border-bottom-right-radius": "",
+    "border-bottom-style": "",
+    "border-bottom-width": "",
+    "border-collapse": "",
+    "border-color": "",
+    "border-end-end-radius": "",
+    "border-end-start-radius": "",
+    "border-image": "",
+    "border-image-outset": "",
+    "border-image-repeat": "",
+    "border-image-slice": "",
+    "border-image-source": "",
+    "border-image-width": "",
+    "border-inline": "",
+    "border-inline-color": "",
+    "border-inline-end": "",
+    "border-inline-end-color": "",
+    "border-inline-end-style": "",
+    "border-inline-end-width": "",
+    "border-inline-start": "",
+    "border-inline-start-color": "",
+    "border-inline-start-style": "",
+    "border-inline-start-width": "",
+    "border-inline-style": "",
+    "border-inline-width": "",
+    "border-left": "",
+    "border-left-color": "",
+    "border-left-style": "",
+    "border-left-width": "",
+    "border-radius": "",
+    "border-right": "",
+    "border-right-color": "",
+    "border-right-style": "",
+    "border-right-width": "",
+    "border-spacing": "",
+    "border-start-end-radius": "",
+    "border-start-start-radius": "",
+    "border-style": "",
+    "border-top": "",
+    "border-top-color": "",
+    "border-top-left-radius": "",
+    "border-top-right-radius": "",
+    "border-top-style": "",
+    "border-top-width": "",
+    "border-width": "",
     "bottom": "",
-    "boxShadow": "",
-    "boxSizing": "",
-    "breakAfter": "",
-    "breakBefore": "",
-    "breakInside": "",
-    "captionSide": "",
-    "caretColor": "",
+    "box-decoration-break": "",
+    "box-shadow": "",
+    "box-sizing": "",
+    "break-after": "",
+    "break-before": "",
+    "break-inside": "",
+    "caption-side": "",
+    "caret-color": "",
     "clear": "",
     "clip": "",
-    "clipPath": "",
+    "clip-path": "",
     "color": "",
-    "columnCount": "",
-    "columnFill": "",
-    "columnGap": "",
-    "columnRule": "",
-    "columnRuleColor": "",
-    "columnRuleStyle": "",
-    "columnRuleWidth": "",
-    "columnSpan": "",
-    "columnWidth": "",
+    "column-count": "",
+    "column-fill": "",
+    "column-gap": "",
+    "column-rule": "",
+    "column-rule-color": "",
+    "column-rule-style": "",
+    "column-rule-width": "",
+    "column-span": "",
+    "column-width": "",
     "columns": "",
     "content": "",
-    "counterIncrement": "",
-    "counterReset": "",
+    "counter-increment": "",
+    "counter-reset": "",
     "cursor": "",
     "direction": "",
     "display": "",
-    "emptyCells": "",
+    "empty-cells": "",
     "filter": "",
     "flex": "",
-    "flexBasis": "",
-    "flexDirection": "",
-    "flexFlow": "",
-    "flexGrow": "",
-    "flexShrink": "",
-    "flexWrap": "",
+    "flex-basis": "",
+    "flex-direction": "",
+    "flex-flow": "",
+    "flex-grow": "",
+    "flex-shrink": "",
+    "flex-wrap": "",
     "float": "",
     "font": "",
-    "fontFamily": "",
-    "fontFeatureSettings": "",
-    "fontKerning": "",
-    "fontLanguageOverride": "",
-    "fontSize": "",
-    "fontSizeAdjust": "",
-    "fontStretch": "",
-    "fontStyle": "",
-    "fontSynthesis": "",
-    "fontVariant": "",
-    "fontVariantAlternates": "",
-    "fontVariantCaps": "",
-    "fontVariantEastAsian": "",
-    "fontVariantLigatures": "",
-    "fontVariantNumeric": "",
-    "fontVariantPosition": "",
-    "fontWeight": "",
+    "font-family": "",
+    "font-feature-settings": "",
+    "font-kerning": "",
+    "font-language-override": "",
+    "font-optical-sizing": "",
+    "font-size": "",
+    "font-size-adjust": "",
+    "font-stretch": "",
+    "font-style": "",
+    "font-synthesis": "",
+    "font-variant": "",
+    "font-variant-alternates": "",
+    "font-variant-caps": "",
+    "font-variant-east-asian": "",
+    "font-variant-ligatures": "",
+    "font-variant-numeric": "",
+    "font-variant-position": "",
+    "font-weight": "",
     "gap": "",
     "grid": "",
-    "gridArea": "",
-    "gridAutoColumns": "",
-    "gridAutoFlow": "",
-    "gridAutoRows": "",
-    "gridColumn": "",
-    "gridColumnEnd": "",
-    "gridColumnGap": "",
-    "gridColumnStart": "",
-    "gridGap": "",
-    "gridRow": "",
-    "gridRowEnd": "",
-    "gridRowGap": "",
-    "gridRowStart": "",
-    "gridTemplate": "",
-    "gridTemplateAreas": "",
-    "gridTemplateColumns": "",
-    "gridTemplateRows": "",
+    "grid-area": "",
+    "grid-auto-columns": "",
+    "grid-auto-flow": "",
+    "grid-auto-rows": "",
+    "grid-column": "",
+    "grid-column-end": "",
+    "grid-column-gap": "",
+    "grid-column-start": "",
+    "grid-gap": "",
+    "grid-row": "",
+    "grid-row-end": "",
+    "grid-row-gap": "",
+    "grid-row-start": "",
+    "grid-template": "",
+    "grid-template-areas": "",
+    "grid-template-columns": "",
+    "grid-template-rows": "",
+    "hanging-punctuation": "",
     "height": "",
     "hyphens": "",
-    "imageOrientation": "",
-    "imageRendering": "",
-    "imageResolution": "",
-    "initialLetter": "",
-    "inlineSize": "",
+    "image-orientation": "",
+    "image-rendering": "",
+    "image-resolution": "",
+    "initial-letter": "",
+    "initial-letter-align": "",
+    "inline-size": "",
     "inset": "",
-    "insetBlock": "",
-    "insetBlockEnd": "",
-    "insetBlockStart": "",
-    "insetInline": "",
-    "insetInlineEnd": "",
-    "insetInlineStart": "",
+    "inset-block": "",
+    "inset-block-end": "",
+    "inset-block-start": "",
+    "inset-inline": "",
+    "inset-inline-end": "",
+    "inset-inline-start": "",
     "isolation": "",
-    "justifyContent": "",
-    "justifyItems": "",
-    "justifySelf": "",
+    "justify-content": "",
+    "justify-items": "",
+    "justify-self": "",
     "left": "",
-    "letterSpacing": "",
-    "lineBreak": "",
-    "lineHeight": "",
-    "listStyle": "",
-    "listStyleImage": "",
-    "listStylePosition": "",
-    "listStyleType": "",
+    "letter-spacing": "",
+    "line-break": "",
+    "line-height": "",
+    "list-style": "",
+    "list-style-image": "",
+    "list-style-position": "",
+    "list-style-type": "",
     "margin": "",
-    "marginBlock": "",
-    "marginBlockEnd": "",
-    "marginBlockStart": "",
-    "marginBottom": "",
-    "marginInline": "",
-    "marginInlineEnd": "",
-    "marginInlineStart": "",
-    "marginLeft": "",
-    "marginRight": "",
-    "marginTop": "",
+    "margin-block": "",
+    "margin-block-end": "",
+    "margin-block-start": "",
+    "margin-bottom": "",
+    "margin-inline": "",
+    "margin-inline-end": "",
+    "margin-inline-start": "",
+    "margin-left": "",
+    "margin-right": "",
+    "margin-top": "",
     "mask": "",
-    "maskClip": "",
-    "maskComposite": "",
-    "maskImage": "",
-    "maskMode": "",
-    "maskOrigin": "",
-    "maskPosition": "",
-    "maskRepeat": "",
-    "maskSize": "",
-    "maskType": "",
-    "maxBlockSize": "",
-    "maxHeight": "",
-    "maxInlineSize": "",
-    "maxWidth": "",
-    "minBlockSize": "",
-    "minHeight": "",
-    "minInlineSize": "",
-    "minWidth": "",
-    "mixBlendMode": "",
-    "objectFit": "",
-    "objectPosition": "",
+    "mask-border": "",
+    "mask-border-mode": "",
+    "mask-border-outset": "",
+    "mask-border-repeat": "",
+    "mask-border-slice": "",
+    "mask-border-source": "",
+    "mask-border-width": "",
+    "mask-clip": "",
+    "mask-composite": "",
+    "mask-image": "",
+    "mask-mode": "",
+    "mask-origin": "",
+    "mask-position": "",
+    "mask-repeat": "",
+    "mask-size": "",
+    "mask-type": "",
+    "max-block-size": "",
+    "max-height": "",
+    "max-inline-size": "",
+    "max-width": "",
+    "min-block-size": "",
+    "min-height": "",
+    "min-inline-size": "",
+    "min-width": "",
+    "mix-blend-mode": "",
+    "object-fit": "",
+    "object-position": "",
     "offset": "",
-    "offsetDistance": "",
-    "offsetPath": "",
-    "offsetRotate": "",
+    "offset-anchor": "",
+    "offset-distance": "",
+    "offset-path": "",
+    "offset-position": "",
+    "offset-rotate": "",
     "opacity": "",
     "order": "",
     "orphans": "",
     "outline": "",
-    "outlineColor": "",
-    "outlineOffset": "",
-    "outlineStyle": "",
-    "outlineWidth": "",
+    "outline-color": "",
+    "outline-offset": "",
+    "outline-style": "",
+    "outline-width": "",
     "overflow": "",
-    "overflowAnchor": "",
-    "overflowBlock": "",
-    "overflowClipBox": "",
-    "overflowInline": "",
-    "overflowWrap": "",
-    "overflowX": "",
-    "overflowY": "",
-    "overscrollBehavior": "",
-    "overscrollBehaviorBlock": "",
-    "overscrollBehaviorInline": "",
-    "overscrollBehaviorX": "",
-    "overscrollBehaviorY": "",
+    "overflow-anchor": "",
+    "overflow-block": "",
+    "overflow-inline": "",
+    "overflow-wrap": "",
+    "overflow-x": "",
+    "overflow-y": "",
+    "overscroll-behavior": "",
+    "overscroll-behavior-block": "",
+    "overscroll-behavior-inline": "",
+    "overscroll-behavior-x": "",
+    "overscroll-behavior-y": "",
     "padding": "",
-    "paddingBlock": "",
-    "paddingBlockEnd": "",
-    "paddingBlockStart": "",
-    "paddingBottom": "",
-    "paddingInline": "",
-    "paddingInlineEnd": "",
-    "paddingInlineStart": "",
-    "paddingLeft": "",
-    "paddingRight": "",
-    "paddingTop": "",
-    "pageBreakAfter": "",
-    "pageBreakBefore": "",
-    "pageBreakInside": "",
-    "paintOrder": "",
+    "padding-block": "",
+    "padding-block-end": "",
+    "padding-block-start": "",
+    "padding-bottom": "",
+    "padding-inline": "",
+    "padding-inline-end": "",
+    "padding-inline-start": "",
+    "padding-left": "",
+    "padding-right": "",
+    "padding-top": "",
+    "page-break-after": "",
+    "page-break-before": "",
+    "page-break-inside": "",
+    "paint-order": "",
     "perspective": "",
-    "perspectiveOrigin": "",
-    "placeContent": "",
-    "placeItems": "",
-    "placeSelf": "",
-    "pointerEvents": "",
+    "perspective-origin": "",
+    "place-content": "",
+    "place-items": "",
+    "place-self": "",
+    "pointer-events": "",
     "position": "",
     "quotes": "",
     "resize": "",
     "right": "",
-    "rowGap": "",
-    "rubyAlign": "",
-    "rubyMerge": "",
-    "rubyPosition": "",
+    "rotate": "",
+    "row-gap": "",
+    "ruby-align": "",
+    "ruby-merge": "",
+    "ruby-position": "",
     "scale": "",
-    "scrollBehavior": "",
-    "scrollMargin": "",
-    "scrollMarginBlock": "",
-    "scrollMarginBlockEnd": "",
-    "scrollMarginBlockStart": "",
-    "scrollMarginBottom": "",
-    "scrollMarginInline": "",
-    "scrollMarginInlineEnd": "",
-    "scrollMarginInlineStart": "",
-    "scrollMarginLeft": "",
-    "scrollMarginRight": "",
-    "scrollMarginTop": "",
-    "scrollPadding": "",
-    "scrollPaddingBlock": "",
-    "scrollPaddingBlockEnd": "",
-    "scrollPaddingBlockStart": "",
-    "scrollPaddingBottom": "",
-    "scrollPaddingInline": "",
-    "scrollPaddingInlineEnd": "",
-    "scrollPaddingInlineStart": "",
-    "scrollPaddingLeft": "",
-    "scrollPaddingRight": "",
-    "scrollPaddingTop": "",
-    "scrollSnapAlign": "",
-    "scrollSnapStop": "",
-    "scrollSnapType": "",
-    "shapeImageThreshold": "",
-    "shapeMargin": "",
-    "shapeOutside": "",
-    "tabSize": "",
-    "tableLayout": "",
-    "textAlign": "",
-    "textAlignLast": "",
-    "textCombineUpright": "",
-    "textDecoration": "",
-    "textDecorationColor": "",
-    "textDecorationLine": "",
-    "textDecorationSkipInk": "",
-    "textDecorationStyle": "",
-    "textDecorationThickness": "",
-    "textEmphasis": "",
-    "textEmphasisColor": "",
-    "textEmphasisPosition": "",
-    "textEmphasisStyle": "",
-    "textIndent": "",
-    "textJustify": "",
-    "textOrientation": "",
-    "textOverflow": "",
-    "textShadow": "",
-    "textSizeAdjust": "",
-    "textTransform": "",
-    "textUnderlinePosition": "",
+    "scroll-behavior": "",
+    "scroll-margin": "",
+    "scroll-margin-block": "",
+    "scroll-margin-block-end": "",
+    "scroll-margin-block-start": "",
+    "scroll-margin-bottom": "",
+    "scroll-margin-inline": "",
+    "scroll-margin-inline-end": "",
+    "scroll-margin-inline-start": "",
+    "scroll-margin-left": "",
+    "scroll-margin-right": "",
+    "scroll-margin-top": "",
+    "scroll-padding": "",
+    "scroll-padding-block": "",
+    "scroll-padding-block-end": "",
+    "scroll-padding-block-start": "",
+    "scroll-padding-bottom": "",
+    "scroll-padding-inline": "",
+    "scroll-padding-inline-end": "",
+    "scroll-padding-inline-start": "",
+    "scroll-padding-left": "",
+    "scroll-padding-right": "",
+    "scroll-padding-top": "",
+    "scroll-snap-align": "",
+    "scroll-snap-stop": "",
+    "scroll-snap-type": "",
+    "shape-image-threshold": "",
+    "shape-margin": "",
+    "shape-outside": "",
+    "tab-size": "",
+    "table-layout": "",
+    "text-align": "",
+    "text-align-last": "",
+    "text-combine-upright": "",
+    "text-decoration": "",
+    "text-decoration-color": "",
+    "text-decoration-line": "",
+    "text-decoration-skip": "",
+    "text-decoration-skip-ink": "",
+    "text-decoration-style": "",
+    "text-decoration-thickness": "",
+    "text-emphasis": "",
+    "text-emphasis-color": "",
+    "text-emphasis-position": "",
+    "text-emphasis-style": "",
+    "text-indent": "",
+    "text-justify": "",
+    "text-orientation": "",
+    "text-overflow": "",
+    "text-rendering": "",
+    "text-shadow": "",
+    "text-size-adjust": "",
+    "text-transform": "",
+    "text-underline-position": "",
     "top": "",
-    "touchAction": "",
+    "touch-action": "",
     "transform": "",
-    "transformBox": "",
-    "transformOrigin": "",
-    "transformStyle": "",
+    "transform-box": "",
+    "transform-origin": "",
+    "transform-style": "",
     "transition": "",
-    "transitionDelay": "",
-    "transitionDuration": "",
-    "transitionProperty": "",
-    "transitionTimingFunction": "",
+    "transition-delay": "",
+    "transition-duration": "",
+    "transition-property": "",
+    "transition-timing-function": "",
     "translate": "",
-    "unicodeBidi": "",
-    "userSelect": "",
-    "verticalAlign": "",
+    "unicode-bidi": "",
+    "user-select": "",
+    "vertical-align": "",
     "visibility": "",
-    "whiteSpace": "",
+    "white-space": "",
     "widows": "",
     "width": "",
-    "willChange": "",
-    "wordBreak": "",
-    "wordSpacing": "",
-    "wordWrap": "",
-    "writingMode": "",
-    "zIndex": ""
+    "will-change": "",
+    "word-break": "",
+    "word-spacing": "",
+    "word-wrap": "",
+    "writing-mode": "",
+    "z-index": ""
 }
 const htmlAttributes = {
     "accept": "defaultFloronJsValues",
@@ -476,31 +496,72 @@ const htmlAttributes = {
 }
 
 class Floron {
-    constructor(){
-
+    constructor() {
+        this.styleTag = document.createElement("style");
+        document.head.append(this.styleTag);
     }
 
-    
-    createElement({ type, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String }) {
+    generateUUID(format = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx") {
+        var d = new Date().getTime();//Timestamp
+        var d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now() * 1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
+        return format.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16;//random number between 0 and 16
+            if (d > 0) {//Use timestamp until depleted
+                r = (d + r) % 16 | 0;
+                d = Math.floor(d / 16);
+            } else {//Use microseconds since page-load if supported
+                r = (d2 + r) % 16 | 0;
+                d2 = Math.floor(d2 / 16);
+            }
+            return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+        });
+    }
+
+
+
+    createElement({ type, stylesProps = styles, hoverProperties = styles, properties = htmlAttributes, children = new Array, content = new String }) {
         const tag = document.createElement(type);
         tag.innerHTML = content;
 
         // Set properties
         for (const [key, value] of Object.entries(properties)) {
-            if(value != "defaultFloronJsValues"){
+            if (value != "defaultFloronJsValues") {
                 tag[key] = value;
             }
         }
 
+        var className = this.generateUUID("FJCxxxx-x-xx")
+        tag.classList.add(className)
+
+
         // Apply styles
-        for (const [key, value] of Object.entries(stylesProps)) {
-            tag.style[key] = value;
+        if(stylesProps){
+            var string = `.${className} {`
+            for (const [key, value] of Object.entries(stylesProps)) {
+                if (value != "") {
+                    tag[key] = value;
+                    string += `${key} : ${value};`
+                }
+            }
+            string += `}`;
+            this.styleTag.append(string);
         }
 
+        console.log(hoverProperties);
+        if (hoverProperties) {
+            var string = `.${className}:hover {`
+            for (const [key, value] of Object.entries(hoverProperties)) {
+                if (value != "") {
+                    tag[key] = value;
+                    string += `${key} : ${value};`
+                }
+            }
+            string += `}`;
+            this.styleTag.append(string);
+        }
         children.forEach(e => {
             tag.append(e);
         })
-
         return tag;
     }
     build(elements = []) {
@@ -509,7 +570,7 @@ class Floron {
         }
     }
     pageStyle(stylesProps = styles) {
-       const styleTag = document.createElement("style");
+        const styleTag = document.createElement("style");
         var styleCode = "body,html {";
         for (const key in stylesProps) {
             if (Object.hasOwnProperty.call(stylesProps, key)) {
@@ -519,453 +580,466 @@ class Floron {
         }
         styleCode += "}";
         styleTag.innerHTML = styleCode;
-        document.head.append(styleTag) 
+        document.head.append(styleTag)
+    }
+    defaultStyleProperties(stylesProps = styles) {
+        const styleTag = document.createElement("style");
+        var styleCode = "* {";
+        for (const key in stylesProps) {
+            if (Object.hasOwnProperty.call(stylesProps, key)) {
+                const element = stylesProps[key];
+                styleCode += key + ":" + element + ";"
+            }
+        }
+        styleCode += "}";
+        styleTag.innerHTML = styleCode;
+        document.head.append(styleTag)
     }
 
     //other tag
-    a({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    a({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "a";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    abbr({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    abbr({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "abbr";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    address({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    address({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "address";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    area({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    area({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "area";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    article({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    article({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "article";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    aside({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    aside({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "aside";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    audio({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    audio({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "audio";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    b({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    b({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "b";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    base({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    base({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "base";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    bdi({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    bdi({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "bdi";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    bdo({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    bdo({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "bdo";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    blockquote({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    blockquote({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "blockquote";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    body({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    body({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "body";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    br({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    br({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "br";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    button({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    button({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "button";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    canvas({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    canvas({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "canvas";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    caption({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    caption({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "caption";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    cite({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    cite({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "cite";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    code({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    code({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "code";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    col({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    col({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "col";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    colgroup({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    colgroup({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "colgroup";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    data({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    data({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "data";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    datalist({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    datalist({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "datalist";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    dd({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    dd({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "dd";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    del({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    del({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "del";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    details({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    details({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "details";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    dfn({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    dfn({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "dfn";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    dialog({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    dialog({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "dialog";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    div({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    div({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "div";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    dl({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    dl({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "dl";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    dt({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    dt({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "dt";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    em({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    em({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "em";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    embed({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    embed({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "embed";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    fieldset({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    fieldset({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "fieldset";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    figcaption({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    figcaption({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "figcaption";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    figure({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    figure({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "figure";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    footer({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    footer({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "footer";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    form({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    form({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "form";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    h1({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    h1({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "h1";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    h2({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    h2({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "h2";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    h3({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    h3({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "h3";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    h4({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    h4({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "h4";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    h5({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    h5({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "h5";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    h6({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    h6({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "h6";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    head({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    head({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "head";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    header({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    header({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "header";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    hgroup({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    hgroup({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "hgroup";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    hr({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    hr({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "hr";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    html({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    html({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "html";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    i({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    i({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "i";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    iframe({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    iframe({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "iframe";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    img({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    img({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "img";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    input({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    input({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "input";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    ins({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    ins({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "ins";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    kbd({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    kbd({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "kbd";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    label({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    label({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "label";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    legend({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    legend({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "legend";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    li({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    li({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "li";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    link({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    link({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "link";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    main({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    main({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "main";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    map({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    map({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "map";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    mark({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    mark({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "mark";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    meta({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    meta({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "meta";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    meter({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    meter({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "meter";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    nav({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    nav({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "nav";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    noscript({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    noscript({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "noscript";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    object({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    object({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "object";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    ol({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    ol({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "ol";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    optgroup({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    optgroup({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "optgroup";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    option({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    option({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "option";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    output({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    output({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "output";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    p({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    p({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "p";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    param({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    param({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "param";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    picture({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    picture({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "picture";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    pre({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    pre({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "pre";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    progress({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    progress({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "progress";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    q({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    q({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "q";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    rp({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    rp({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "rp";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    rt({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    rt({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "rt";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    ruby({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    ruby({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "ruby";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    s({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    s({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "s";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    samp({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    samp({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "samp";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    script({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    script({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "script";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    section({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    section({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "section";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    select({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    select({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "select";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    slot({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    slot({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "slot";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    small({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    small({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "small";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    source({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    source({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "source";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    span({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    span({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "span";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    strong({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    strong({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "strong";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    style({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    style({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "style";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    sub({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    sub({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "sub";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    summary({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    summary({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "summary";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    sup({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    sup({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "sup";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    table({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    table({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "table";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    tbody({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    tbody({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "tbody";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    td({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    td({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "td";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    template({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    template({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "template";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    textarea({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    textarea({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "textarea";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    tfoot({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    tfoot({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "tfoot";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    th({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    th({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "th";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    thead({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    thead({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "thead";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    time({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    time({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "time";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    title({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    title({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "title";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    tr({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    tr({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "tr";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    track({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    track({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "track";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    u({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    u({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "u";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    ul({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    ul({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "ul";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    var({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    var({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "var";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    video({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    video({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "video";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
-    wbr({ type = new String, stylesProps = styles, properties = htmlAttributes , children = new Array, content = new String } = {}) {
+    wbr({ type = new String, stylesProps = styles, properties = htmlAttributes, children = new Array, content = new String } = {}) {
         type = "wbr";
-        return this.createElement({type, stylesProps, properties, children, content});
+        return this.createElement({ type, stylesProps, properties, children, content });
     }
 };
 
